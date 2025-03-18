@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.backgroundDesign {
+    position: absolute;
+}
+
+.backgroundDesign .Angela {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    overflow: hidden;
+    margin-top: -100px;
+    opacity: 75%;
+    margin-left: 2in;
+}
+
+.backgroundDesign .Aurora {
+    float: right;
+    width: 16in;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -4;
+    transform: rotateY(180deg);
+    overflow: hidden;
+    margin-left: -6.2in;
+    opacity: 75%;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.Pic {
+    margin-left: -40px;
+    font-size: 50px;
+    color: white;
+    border-radius: 100px;
+    width: 100px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.Pic:hover {
+    margin-left: -40px;
+    font-size: 50px;
+    color: white;
+    border-radius: 100px;
+    width: 100px;
+    cursor: pointer;
+    border: solid white;
+}
+
+.navigation a {
+    position: relative;
+    font-weight: 500;
+    margin-left: 40px;
+    font-size: 30px;
+    border-bottom: solid white;
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.navigation a:hover {
+    position: relative;
+    font-weight: 500;
+    margin-left: 40px;
+    font-size: 30px;
+    border-bottom: solid white;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+}
+
+body {
+    background-image: linear-gradient(to left, rgb(238, 79, 79), rgb(126, 116, 216));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* The Name */
+
+.MainPage {
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+
+} 
+.MainPage h2 {
+    color: white;
+    font-size: 100px
+}
+
+.MainPage p {
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    margin-top: -15px;
+    margin-left: -25px;
+}
+
+
+

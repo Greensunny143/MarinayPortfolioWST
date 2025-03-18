@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.backgroundDesign {
+    position: absolute;
+}
+
+.backgroundDesign .Angela {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    overflow: hidden;
+    margin-top: -100px;
+    opacity: 75%;
+    margin-left: 2in;
+}
+
+.backgroundDesign .Aurora {
+    float: right;
+    width: 16in;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -4;
+    transform: rotateY(180deg);
+    overflow: hidden;
+    margin-left: -6.2in;
+    opacity: 75%;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    margin-left: -40px;
+    font-size: 50px;
+    color: white;
+    border-radius: 100px;
+    width: 100px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.scrollJump-container {
+    display: grid;
+}
+
+.logo:hover {
+    margin-left: -40px;
+    font-size: 50px;
+    color: white;
+    border-radius: 100px;
+    width: 100px;
+    cursor: pointer;
+    border: solid white;
+}
+
+.goBackBtn {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.goBackBtn:hover {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+body {
+    background-image: linear-gradient(to left, rgb(238, 79, 79), rgb(126, 116, 216));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    filter: blur(90%);
+    width: 80%;
+    border-radius: 10px;
+}
+
+.container h1 {
+    text-align: center;
+    padding-bottom: 50px;
+    text-decoration: underline;
+}
+
+.content {
+    z-index: -20;
+    color: white;
+    font-size: 30px;
+    border: solid;
+    margin-top: 230px;
+}
+
+.content h2 {
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+
+.pic {
+    display: flex;
+    justify-content: center;
+}
+
+.pic img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    transition: .5s;
+}
+
+.pic img:hover {
+    padding: 40px;
+}
+
+.content ol {
+    margin-left: 100px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+ol a {
+    text-decoration: none;
+    color: antiquewhite;
+}

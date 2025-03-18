@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.backgroundDesign {
+    position: absolute;
+}
+
+.backgroundDesign .Angela {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    overflow: hidden;
+    margin-top: -100px;
+    opacity: 75%;
+    margin-left: 2in;
+}
+
+.backgroundDesign .Aurora {
+    float: right;
+    width: 16in;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -4;
+    transform: rotateY(180deg);
+    overflow: hidden;
+    margin-left: -6.2in;
+    opacity: 75%;
+}
+
+
+.Pic {
+    margin-left: -40px;
+    font-size: 50px;
+    color: white;
+    border-radius: 100px;
+    width: 100px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.Pic:hover {
+    margin-left: -40px;
+    font-size: 50px;
+    color: white;
+    border-radius: 100px;
+    width: 100px;
+    cursor: pointer;
+    border: solid white;
+}
+
+.goBackBtn {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.goBackBtn:hover {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+body {
+    background-image: linear-gradient(to left, rgb(238, 79, 79), rgb(126, 116, 216));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ytChannel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.ytChannel img {
+    border-radius: 100%;
+    transition: .5s;
+}
+
+.ytChannel img:hover {
+    border-radius: 100%;
+    padding: 20px;
+}
+
+.socMeds h1 {
+    color: wheat;
+    font-size: 100px;
+    margin-top: -150px;
+    text-align: center;
+}
+
+.fbAccounts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.fbAccounts img {
+    border-radius: 100%;
+    padding: 20px;
+    transition: .5s;
+}
+
+.fbAccounts img:hover {
+    border-radius: 100%;
+    padding: 10px;
+
+}
+
+.tiktokAccount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tiktokAccount img {
+    border-radius: 100%;
+    transition: .5s;
+}
+
+.tiktokAccount img:hover {
+    border-radius: 100%;
+    padding: 20px;
+}
+

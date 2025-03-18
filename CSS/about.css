@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.Pic {
+    margin-left: -40px;
+    font-size: 50px;
+    color: white;
+    border-radius: 100px;
+    width: 100px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.Pic:hover {
+    margin-left: -40px;
+    font-size: 50px;
+    color: white;
+    border-radius: 100px;
+    width: 100px;
+    cursor: pointer;
+    border: solid white;
+}
+
+.backgroundDesign {
+    position: absolute;
+}
+
+.backgroundDesign .Angela {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    overflow: hidden;
+    margin-top: -100px;
+    opacity: 75%;
+    margin-left: 2in;
+}
+
+.backgroundDesign .Aurora {
+    float: right;
+    width: 16in;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -4;
+    transform: rotateY(180deg);
+    overflow: hidden;
+    margin-left: -6.2in;
+    opacity: 75%;
+}
+
+
+.goBackBtn {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.goBackBtn:hover {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+body {
+    background-image: linear-gradient(to left, rgb(238, 79, 79), rgb(126, 116, 216));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px ;
+}
+
+.content {
+    font-size: 40px;
+    border: solid ;
+    padding: 20px;
+    background-color: rgba(124, 82, 190, 0.664);
+    border-width: 10px;
+    color: white;
+    border-radius: 10px;
+    filter: blur(90%);
+    box-shadow: 15px 10px rgba(24, 23, 23, 0.466) ;
+}
+
+.content h1 {
+    text-decoration: underline;
+    margin-bottom: 20px;
+    
+}
+
+.content h2 {
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+.content p {
+    padding: 20px;
+}
+
+.content ol {
+    margin-left: 50px;
+}
+
+.photo {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.church-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pyccPic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.patrons, .patronName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.patronName h1 {
+    width: 290px;
+    color: aliceblue;
+}
+
+.patrons img{
+    padding: 20px;
+    border-radius: 100%;
+}
+
+.churchFront {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.churchInside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.theChurch h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    font-size: 50px;
+}
+
+.pastLove {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pastLove img {
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.myPastlove-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+}
+
+.myBFF {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myBFF img {
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    z-index: -1;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top img {
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    z-index: 1;
+    margin-top: -400px;
+    opacity: 1;
+    transition: .5s;
+}
+
+.top img:hover {
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    z-index: 1;
+    margin-top: -400px;
+    opacity: 0;
+}
+
+.bffTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bffTitle h1{
+    color: white;
+    font-size: 200px;
+}
+
+.cec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cecTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 70px;
+}
+
+
+
+

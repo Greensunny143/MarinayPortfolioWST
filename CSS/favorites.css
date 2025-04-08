@@ -32,10 +32,9 @@ html {
     z-index: -4;
     transform: rotateY(180deg);
     overflow: hidden;
-    margin-left: -6.2in;
+    margin-left: -7.5in;
     opacity: 75%;
 }
-
 
 header {
     position: fixed;
@@ -46,7 +45,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+background-color: rgba(173, 66, 173, .2);
+backdrop-filter: blur(35px);
+border-bottom: solid white;
 }
 
 .logo {
@@ -74,17 +75,21 @@ header {
 }
 
 .goBackBtn {
-    text-decoration: none;
+    font-size: 2vw;
+    font-weight: 500;
     color: white;
-    font-size: 20px;
-    transition: .5s;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+    padding: 0.3em 0.5em;
+    border-radius: 0.5em;
+    transition: 0.3s ease;
 }
 
 .goBackBtn:hover {
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
+    background-color: white;
+    color: black;
 }
+
 
 body {
     background-image: linear-gradient(to left, rgb(238, 79, 79), rgb(126, 116, 216));
@@ -99,9 +104,7 @@ body {
 }
 
 .container {
-    filter: blur(90%);
     width: 80%;
-    border-radius: 10px;
 }
 
 .container h1 {
@@ -116,6 +119,9 @@ body {
     font-size: 30px;
     border: solid;
     margin-top: 230px;
+    background: rgb(204, 63, 204);
+    filter: blur(90%);
+    border-radius: 10px;
 }
 
 .content h2 {
@@ -150,3 +156,30 @@ ol a {
     text-decoration: none;
     color: antiquewhite;
 }
+
+@media (max-width: 900px) {
+
+    .navigation a {
+        font-size: 4vw;
+        position: fixed;
+    }
+
+    .pic img {
+        width: 100px;
+        height: 150px;
+    }
+
+
+    .backgroundDesign {
+        opacity:0%;
+    }
+
+    body {
+        background-image: linear-gradient( rgb(248, 113, 237), rgb(255, 113, 243));
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+}
+
+
+

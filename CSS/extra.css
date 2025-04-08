@@ -13,10 +13,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+background-color: rgba(173, 66, 173, .2);
+backdrop-filter: blur(35px);
+border-bottom: solid white;
+z-index: 20;
 }
 
-.Pic {
+.logo {
     margin-left: -40px;
     font-size: 50px;
     color: white;
@@ -26,7 +29,7 @@ header {
     transition: .5s;
 }
 
-.Pic:hover {
+.logo:hover {
     margin-left: -40px;
     font-size: 50px;
     color: white;
@@ -60,46 +63,27 @@ header {
     z-index: -4;
     transform: rotateY(180deg);
     overflow: hidden;
-    margin-left: -6.2in;
+    margin-left: -7.5in;
     opacity: 75%;
 }
 
 
 .goBackBtn {
-    text-decoration: none;
+    font-size: 2vw;
+    font-weight: 500;
     color: white;
-    font-size: 20px;
-    transition: .5s;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+    padding: 0.3em 0.5em;
+    border-radius: 0.5em;
+    transition: 0.3s ease;
 }
 
 .goBackBtn:hover {
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
-}
-
-.navigation a {
-    position: relative;
-    font-weight: 500;
-    margin-left: 40px;
-    font-size: 30px;
-    border-bottom: solid white;
-    color: white;
-    text-decoration: none;
-    transition: .5s;
-}
-
-.navigation a:hover {
-    position: relative;
-    font-weight: 500;
-    margin-left: 40px;
-    font-size: 30px;
-    border-bottom: solid white;
-    color: black;
-    text-decoration: none;
     background-color: white;
-    border-radius: 10px;
+    color: black;
 }
+
 
 body {
     background-image: linear-gradient(to left, rgb(238, 79, 79), rgb(126, 116, 216));
@@ -112,20 +96,38 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 200px ;
+    flex-direction: column;
+    padding: 2em;
+    
 }
 
-.edrian {
+.edrian1, .edrian2 {
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
 
-.edrian img {
-    width: 400px;
-    height: 400px;
+.edrian2 {
+    width: 30rem;
+    height: 30rem;
     border-radius: 100%;
-    margin: 10px;
+    z-index: -1;
+}
+
+.edrian1 {
+    margin-top: -480px;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 100%;
+    z-index: 1;
+    opacity: 1;
+    transition: .5s;
+}
+
+.edrian1:hover {
+    opacity: 0;
+
 }
 
 .ytLink {
@@ -138,6 +140,31 @@ body {
 .ytLink iframe {
     margin: 10px;
 }
+
+.letter4Him {
+    color: aliceblue;
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 900px) {
+
+    .navigation a {
+        font-size: 3vw;
+    }
+
+    .backgroundDesign {
+        opacity:0%;
+    }
+
+    body {
+        background-image: linear-gradient( rgb(248, 113, 237), rgb(255, 113, 243));
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+}
+
+
 
 
 

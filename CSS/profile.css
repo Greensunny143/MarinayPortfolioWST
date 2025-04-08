@@ -28,7 +28,7 @@
     z-index: -4;
     transform: rotateY(180deg);
     overflow: hidden;
-    margin-left: -6.2in;
+    margin-left: -7.5in;
     opacity: 75%;
 }
 
@@ -38,58 +38,50 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 2vh 5vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    z-index: 10;
 }
 
 .Pic {
-    margin-left: -40px;
-    font-size: 50px;
-    color: white;
-    border-radius: 100px;
-    width: 100px;
+    width: 10vw;
+    min-width: 60px;
+    max-width: 100px;
+    border-radius: 50%;
     cursor: pointer;
-    transition: .5s;
+    transition: 0.5s ease;
 }
 
 .Pic:hover {
-    margin-left: -40px;
-    font-size: 50px;
-    color: white;
-    border-radius: 100px;
-    width: 100px;
-    cursor: pointer;
-    border: solid white;
+    border: 2px solid white;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
 }
 
 .navigation a {
-    position: relative;
+    font-size: 2vw;
     font-weight: 500;
-    margin-left: 40px;
-    font-size: 30px;
-    border-bottom: solid white;
     color: white;
     text-decoration: none;
-    transition: .5s;
+    border-bottom: 2px solid white;
+    padding: 0.3em 0.5em;
+    border-radius: 0.5em;
+    transition: 0.3s ease;
 }
 
 .navigation a:hover {
-    position: relative;
-    font-weight: 500;
-    margin-left: 40px;
-    font-size: 30px;
-    border-bottom: solid white;
-    color: black;
-    text-decoration: none;
     background-color: white;
-    border-radius: 10px;
+    color: black;
 }
 
 body {
-    background-image: linear-gradient(to left, rgb(238, 79, 79), rgb(126, 116, 216));
+    background-image: linear-gradient( to right, rgb(129, 141, 250), rgb(255, 113, 125));
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -98,21 +90,58 @@ body {
 
 .MainPage {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    margin-top: 250px;
-
-} 
-.MainPage h2 {
+    height: 100vh;
+    padding-top: 7vh;
+    text-align: center;
+}
+.MainPage p {
+    font-size: 2vw;
     color: white;
-    font-size: 100px
 }
 
-.MainPage p {
+.MainPage h2 {
+    font-size: 6vw;
     color: white;
-    font-size: 30px;
-    padding: 10px;
-    margin-top: -15px;
-    margin-left: -25px;
+}
+
+@media (max-width: 900px) {
+
+    .navigation a {
+        font-size: 3vw;
+    }
+
+
+    .MainPage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        padding-top: 7vh;
+        text-align: center;
+    }
+    .MainPage p {
+        font-size: 2vw;
+        color: white;
+    }
+    
+    .MainPage h2 {
+        font-size: 6vw;
+        color: white;
+    }
+
+    .backgroundDesign {
+        opacity:0%;
+    }
+
+    body {
+        background-image: linear-gradient( rgb(248, 113, 237), rgb(255, 113, 243));
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
 }
 
 

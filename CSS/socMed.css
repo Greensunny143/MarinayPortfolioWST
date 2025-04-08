@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: linear-gradient(to left, rgb(238, 79, 79), rgb(126, 116, 216));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -13,7 +20,100 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+background-color: rgba(173, 66, 173, .2);
+backdrop-filter: blur(35px);
+border-bottom: solid white;
+}
 
+.logo {
+    font-size: 2.5rem;
+    color: white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.logo:hover {
+    border: 2px solid white;
+}
+
+.goBackBtn {
+    font-size: 2vw;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+    padding: 0.3em 0.5em;
+    border-radius: 0.5em;
+    transition: 0.3s ease;
+}
+
+.goBackBtn:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+
+.ytChannel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+    flex-wrap: wrap;
+}
+
+.ytChannel img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.ytChannel img:hover {
+    padding: 10px;
+}
+
+.socMeds h1 {
+    color: wheat;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.fbAccounts,
+.tiktokAccount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.fbAccounts img,
+.tiktokAccount img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.fbAccounts img:hover,
+.tiktokAccount img:hover {
+    padding: 10px;
 }
 
 .backgroundDesign {
@@ -40,115 +140,26 @@ header {
     z-index: -4;
     transform: rotateY(180deg);
     overflow: hidden;
-    margin-left: -6.2in;
+    margin-left: -7.5in;
     opacity: 75%;
 }
 
+@media (max-width: 900px) {
 
-.Pic {
-    margin-left: -40px;
-    font-size: 50px;
-    color: white;
-    border-radius: 100px;
-    width: 100px;
-    cursor: pointer;
-    transition: .5s;
+    .navigation a {
+        font-size: 3vw;
+    }
+
+    .backgroundDesign {
+        opacity:0%;
+    }
+
+    body {
+        background-image: linear-gradient( rgb(248, 113, 237), rgb(255, 113, 243));
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
 }
 
-.Pic:hover {
-    margin-left: -40px;
-    font-size: 50px;
-    color: white;
-    border-radius: 100px;
-    width: 100px;
-    cursor: pointer;
-    border: solid white;
-}
 
-.goBackBtn {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    transition: .5s;
-}
-
-.goBackBtn:hover {
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
-}
-
-body {
-    background-image: linear-gradient(to left, rgb(238, 79, 79), rgb(126, 116, 216));
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.ytChannel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.ytChannel img {
-    border-radius: 100%;
-    transition: .5s;
-}
-
-.ytChannel img:hover {
-    border-radius: 100%;
-    padding: 20px;
-}
-
-.socMeds h1 {
-    color: wheat;
-    font-size: 100px;
-    margin-top: -150px;
-    text-align: center;
-}
-
-.fbAccounts {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    
-}
-
-.fbAccounts img {
-    border-radius: 100%;
-    padding: 20px;
-    transition: .5s;
-}
-
-.fbAccounts img:hover {
-    border-radius: 100%;
-    padding: 10px;
-
-}
-
-.tiktokAccount {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.tiktokAccount img {
-    border-radius: 100%;
-    transition: .5s;
-}
-
-.tiktokAccount img:hover {
-    border-radius: 100%;
-    padding: 20px;
-}
 

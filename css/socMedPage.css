@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    position: sticky;
+    top:0;
+    padding: 1rem;
+    border-bottom: solid white;
+    backdrop-filter: blur(10px);
+    background-color: rgba(235, 160, 235, .5); 
+    overflow: hidden;
+    z-index: 99;
+}
+
+header a img {
+    border-radius: 100%;
+    width: 5rem;
+    height: auto;
+}
+
+/*Start of the styling*/
+
+.interface{
+    width: 100%;
+    margin-top:7vh;
+    flex-direction: column;
+}
+
+
+.container, .container2, .container3 {
+    width:85%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 5vh;
+    border: solid white;
+    backdrop-filter: blur(10px);
+    background-color: rgba(235, 160, 235, .5);
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 2rem;
+}
+
+.container h1, .container2 img {
+    padding:1rem;
+}
+
+.container a {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.container img {
+    border-radius: 50%;
+    width: 15%;
+    transition: .5s;
+}
+
+
+
+.fbAccounts img  {
+border-radius: 50%;
+padding: 1rem;
+transition: .5s;
+}
+
+.container3 img {
+    border-radius: 50%;
+padding: 1rem;
+width: 15%;
+height: 10rem;
+transition: .5s;
+}
+
+.container img:hover, .fbAccounts img:hover, .container3 img:hover {
+    padding:2rem;
+}
+

@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-padding-top: 120px;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    position: sticky;
+    top:0;
+    height: 120px;
+    padding: 1rem;
+    border-bottom: solid white;
+    backdrop-filter: blur(10px);
+    background-color: rgba(235, 160, 235, .5); 
+    overflow: hidden;
+    z-index: 99;
+}
+
+header a img {
+    border-radius: 100%;
+    width: 5rem;
+    height: auto;
+}
+
+/* Styling content Starts here*/
+
+.interface {
+    display: flex;
+    justify-content: center;
+    margin-top:7vh;
+    flex-direction: row;
+}
+
+.container, .container2 {
+    margin-top: 5vh;
+    border: solid white;
+    backdrop-filter: blur(10px);
+    background-color: rgba(235, 160, 235, .5);
+}
+
+.container { 
+    width: 15%;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
+    
+}
+
+.container a {
+    color:white;
+    text-decoration:none;
+    transition:.5s;
+}
+
+.container a:hover {
+    color:rgb(7, 0, 6);
+    border-radius:50%;
+    background:rgb(243, 198, 243);
+}
+
+.stick {
+    position: sticky;
+    top: 120px;
+}
+
+.container h2, li {
+    display: flex;
+    justify-content: flex-start;
+    padding:1rem;
+}
+
+.container2 {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    font-size: 2rem;
+}
+
+.container2 h1 {
+    color:white;
+    padding:2rem;
+}
+
+
+.pic {
+    display: flex;
+    justify-content: center;
+}
+
+.pic img {
+    padding: 1rem;
+    transition:.5s;
+}
+
+.pic img:hover {
+    padding: 1.5rem;
+}

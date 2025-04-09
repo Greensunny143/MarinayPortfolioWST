@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    border-bottom: solid white;
+    backdrop-filter: blur(10px);
+    background-color: rgba(235, 160, 235, .5);
+    overflow: hidden;
+    z-index: 99;
+}
+
+header a img {
+    border-radius: 100%;
+    width: 5rem;
+    height: auto;
+}
+
+/*Start of the Content Styling*/
+
+.interface {
+    display: flex;
+    justify-content: center;
+    margin-top:7vh;
+    flex-direction: column;
+}
+
+.container, .container2 {
+    margin-top: 5vh;
+    border: solid white;
+    backdrop-filter: blur(10px);
+    background-color: rgba(235, 160, 235, .5);
+}
+
+.container {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.myBiography {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    color: white;
+    border: solid white;
+    padding: 2rem;
+}
+
+.container2 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.organization {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    color: white;
+    border: solid white;
+    padding: 2rem;
+}
+
+.pycc, .alpha, .images, .nstp {
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    margin-left:auto;
+margin-right:auto;
+}
+
+.pycc img, .alpha img, .images img, .nstp img {
+    padding: 1rem;
+    width:22rem;
+    
+}
+
+@media (max-width: 900px) {
+    .container {
+        width:80%;
+    }
+}
+

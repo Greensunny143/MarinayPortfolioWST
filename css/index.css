@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    position: sticky;
+    top:0;
+    padding: 1rem;
+    border-bottom: solid white;
+    backdrop-filter: blur(10px);
+    background-color: rgba(235, 160, 235, .5); 
+    overflow: hidden;
+    z-index: 99;
+}
+
+header a img {
+    border-radius: 100%;
+    width: 5rem;
+    height: auto;
+}
+
+.mainInterface {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display: block;
+    text-align: center;
+    margin-top: 17vh;
+}
+
+.container h1, i {
+    color: rgb(255, 255, 255);
+    font-size: 5rem;
+}
+
+.buttons {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.buttons a {
+    text-decoration:none;
+}
+
+.btn {
+    text-decoration: none;
+    border: solid white;
+    padding: 2rem;
+    margin: 2rem;
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(216, 2, 216, .5);
+    backdrop-filter: blur(8px);
+    color:white;
+    font-size: 2rem;
+    transition: .5s;
+}
+
+.btn:hover {
+    border:black;
+    background:rgb(255, 255, 255);
+    color:black;
+    border-radius: 50%;
+}

@@ -10,13 +10,17 @@ body {
     background-attachment: fixed;
 }
 
+
 header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     position: sticky;
-    top:0;
+    top: 0;
     padding: 1rem;
     border-bottom: solid white;
     backdrop-filter: blur(10px);
-    background-color: rgba(235, 160, 235, .5); 
+    background-color: rgba(235, 160, 235, .5);
     overflow: hidden;
     z-index: 99;
 }
@@ -27,43 +31,102 @@ header a img {
     height: auto;
 }
 
+nav {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 4rem;
+    font-size: 2rem;
+    padding: 1rem;
+    padding-bottom: 0;
+    padding-top: 0;
+    color: white;
+    border-bottom: solid white;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    transition: .5s;
+}
+
+nav a:hover {
+    background: white;
+    color: black;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+}
+
 /*Style content starts here*/
 
 .interface {
     display: flex;
     justify-content: center;
-    margin-top:7vh;
+    margin-top: 7vh;
     flex-direction: column;
     width: 80%;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.container, .container2, .container3, .container4 {
+.container,
+.container2,
+.container3,
+.container4 {
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     flex-direction: column;
     margin-top: 5vh;
     border: solid white;
     backdrop-filter: blur(10px);
     background-color: rgba(235, 160, 235, .5);
     text-align: center;
-    color:aliceblue;
+    color: aliceblue;
     font-size: 2rem;
     padding: 1rem;
     margin: 1rem;
 }
 
-.img1, .img2 {
-    border-radius:100%;
-    width:30%;
+.container5 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    border: solid white;
+    backdrop-filter: blur(10px);
+    background-color: rgba(235, 160, 235, .5);
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 2rem;
+
+}
+
+.container5 img {
+    border-radius: 50%;
+    padding: 1rem;
+    width: 20%;
+    height: 10rem;
+    transition: .5s;
+}
+
+.container5 img:hover {
+    padding: 2rem;
+}
+
+.img1,
+.img2 {
+    border-radius: 100%;
+    width: 30%;
     height: 20rem;
     padding: 1rem;
 }
 
 .img1 {
-    z-index:10;
+    z-index: 10;
     transition: .3s ease-out;
 }
 
@@ -76,9 +139,101 @@ header a img {
     margin-top: -20rem;
 }
 
-.pic1 {
-    width:30%;
-    height:15%;
+.pic1,
+.rightHeart,
+.leftHeart {
+    width: 30%;
+    height: 15%;
     border-radius: 50%;
+    transition: .5s;
 }
 
+.groupHeart {
+    padding: 2rem;
+}
+
+.rightHeart {
+    border-top-left-radius: 250px;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 250px;
+    transform: translateX(-4rem) rotate(-20deg);
+}
+
+.leftHeart {
+    border-top-left-radius: 150px;
+    border-top-right-radius: 250px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 250px;
+    transform: translateX(4rem) rotate(20deg);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+@media (max-width: 767px) {
+
+    .img1,
+    .img2 {
+        border-radius: 100%;
+        width: 80%;
+        height: 11rem;
+        padding: 1rem;
+    }
+
+    .img2 {
+        margin-top: -11rem;
+    }
+
+    iframe {
+        width: 200px;
+        height: 100px;
+    }
+
+    .pastLove {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .pastLove img {
+        width: 60%;
+    }
+
+    .pic1,
+    .rightHeart,
+    .leftHeart {
+        width: 30%;
+        height: 15%;
+        border-radius: 50%;
+        transition: .5s;
+    }
+
+    .rightHeart {
+        border-radius: 50%;
+        transform: translateX(0) rotate(0);
+    }
+
+    .leftHeart {
+        border-radius: 50%;
+        transform: translateX(0) rotate(0);
+    }
+
+    header a img {
+        width: 3rem;
+    }
+
+    nav a {
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size:.8rem;
+    }
+
+}

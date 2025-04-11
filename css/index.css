@@ -11,12 +11,15 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     position: sticky;
-    top:0;
+    top: 0;
     padding: 1rem;
     border-bottom: solid white;
     backdrop-filter: blur(10px);
-    background-color: rgba(235, 160, 235, .5); 
+    background-color: rgba(235, 160, 235, .5);
     overflow: hidden;
     z-index: 99;
 }
@@ -25,6 +28,35 @@ header a img {
     border-radius: 100%;
     width: 5rem;
     height: auto;
+}
+
+nav  {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 4rem;
+    font-size:2rem;
+    padding:1rem;
+    padding-bottom:0;
+    padding-top:0;
+    color: white;
+    border-bottom: solid white;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    transition: .5s;
+}
+
+nav a:hover {
+    background: white;
+    color: black;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
 }
 
 .mainInterface {
@@ -42,9 +74,11 @@ header a img {
     margin-top: 17vh;
 }
 
-.container h1, i {
+.container h1,
+i {
     color: rgb(255, 255, 255);
     font-size: 5rem;
+    user-select: none;
 }
 
 .buttons {
@@ -55,7 +89,7 @@ header a img {
 
 
 .buttons a {
-    text-decoration:none;
+    text-decoration: none;
 }
 
 .btn {
@@ -69,14 +103,44 @@ header a img {
     margin-right: auto;
     background-color: rgba(216, 2, 216, .5);
     backdrop-filter: blur(8px);
-    color:white;
+    color: white;
     font-size: 2rem;
     transition: .5s;
 }
 
 .btn:hover {
-    border:black;
-    background:rgb(255, 255, 255);
-    color:black;
+    border: black;
+    background: rgb(255, 255, 255);
+    color: black;
     border-radius: 50%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .btn {
+        width: 80%;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+background-size: cover;
+    }
+    header a img {
+width:3rem;
+    }
+    nav a {
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+    .container {
+margin-top:5vh;
+    }
+    .btn {
+        width: 80%;
+    }
+    .container h1,
+i {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+}
 }

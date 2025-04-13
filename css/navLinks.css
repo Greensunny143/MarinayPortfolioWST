@@ -61,13 +61,11 @@ nav a:hover {
     margin-top: 5vh;
     backdrop-filter: blur(10px);
     background-color: rgba(235, 160, 235, .5);
-}
-
-.container {
     width: 40%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
+    user-select: none;
 }
 
 hr {
@@ -85,6 +83,15 @@ hr {
     color: white;
     border: solid white;
     padding: 2rem;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-top: solid white;
+    backdrop-filter: blur(10px);
+    background-color: rgba(235, 160, 235, .5);
 }
 
 

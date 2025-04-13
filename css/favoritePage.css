@@ -77,6 +77,7 @@ nav a:hover {
     border: solid white;
     backdrop-filter: blur(10px);
     background-color: rgba(235, 160, 235, .5);
+    
 }
 
 .container { 
@@ -117,6 +118,7 @@ nav a:hover {
     margin-right: auto;
     text-align:center;
     font-size: 2rem;
+    margin-bottom: 2vh;
 }
 
 .container2 h1 {
@@ -137,6 +139,15 @@ nav a:hover {
 
 .pic img:hover {
     padding: 1.5rem;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-top: solid white;
+    backdrop-filter: blur(10px);
+    background-color: rgba(235, 160, 235, .5);
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     

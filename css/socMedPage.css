@@ -105,10 +105,17 @@ padding: 1rem;
 transition: .5s;
 }
 
-
-
 .container img:hover, .fbAccounts img:hover {
     padding:2rem;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-top: solid white;
+    backdrop-filter: blur(10px);
+    background-color: rgba(235, 160, 235, .5);
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
